@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<style>
+    table{
+        width: 80%;
+    }
+    table, tr, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th{
+        background-color: lightcyan;
+    }
+    td{
+        text-align: center;
+    }
+    tr{
+        height: 35px;
+    }
+    tr:nth-child(even){
+        background-color: gainsboro;
+    }
+</style>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7</td>
+                <td>Ronaldo</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Lionel Missi</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Neymar</td>
+                <td>Male</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

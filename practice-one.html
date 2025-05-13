@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-Practic</title>
+    <style>
+        table {
+      width: 70%;
+      font-family: Arial, sans-serif;
+      margin: auto;
+      background-color: rgba(132, 251, 255, 0.323);
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 1px 5px;
+      text-align: left;
+    }
+    tr:nth-child(even) {
+      background-color:lightblue;
+    }
+    .background{
+      background-color: rgba(0, 239, 239, 0.607);  
+    }
+    .Footer{
+        text-align: right;
+    }
+    .green{
+        background-color: lightgreen;
+    }
+    .red{
+        background-color: lightcoral;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <THead>
+            <tr>
+                <th rowspan="2"> Name</th>
+                <th rowspan="2">ID</th>
+                <th colspan="2">Membership Date</th>
+                <th rowspan="2">Balance</th>
+            </tr>
+            <tr>
+                <th class="green">Joined</th>
+                <th class="red">Canceled</th>
+            </tr>
+        </THead>
+        <tbody>
+            <tr>
+                <td class="background" >Margaret</td>
+                <td>427311</td>
+                <td>June 3, 2010</td>
+                <td>n/a</td>
+                <td>0,00</td>
+            </tr>
+            <tr>
+                <td class="background" >Edvard Galinski</td>
+                <td>567544</td>
+                <td>Janury 13, 2011</td>
+                <td>Aprill 8,20217</td>
+                <td>37.00</td>
+            </tr>
+            <tr>
+                <td class="background" >Hoshi Nakamura</td>
+                <td>427311</td>
+                <td>June 3, 2010</td>
+                <td>n/a</td>
+                <td>15.00</td>
+            </tr>
+            <tr class="Footer">
+                <th colspan="4">Total balance</th>
+                <th>52.00</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="4">Total balance</th>
+            <th>52.00</th>
+        </tfoot>
+    </table>
+</body>
+</html>

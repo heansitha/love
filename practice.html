@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table,
+    tr,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 6px;
+    }
+    thead,
+    tfoot {
+      background-color: lightblue;
+      border: 3px solid gray;
+    }
+    tfoot {
+      border-top: 3px dashed gray;
+    }
+    table {
+      width: 70%;
+      border: 3px solid gray;
+    }
+    tr {
+      height: 30px;
+    }
+    .right {
+      text-align: right;
+    }
+    .center {
+      text-align: center;
+    }
+    .Joined {
+      background-color: lightgreen;
+    }
+    .Canceled {
+      background-color: lightcoral;
+    }
+    .bg-name {
+      background-color: lightskyblue;
+    }
+    tr:nth-child(even) {
+      background-color: lightgray;
+    }
+    tbody > tr:nth-child(odd) {
+      background-color: rgba(83, 209, 234, 0.235);
+    }
+  </style>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">ID</th>
+                <th colspan="2">Memership Datas</th>
+                <th rowspan="2">Balance</th>
+            </tr>
+            <tr>
+                <th class="bj-green">Joined</th>
+                <th class="bj-red">Cancelled</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="a">Margaret Nguyen</td>
+                <td class="center">427311</td>
+                <td>June 3,2010</td>
+                <td>n/a</td>
+                <td class="right">0.00</td>
+            </tr>
+            <tr>
+                <td class="a">Edvard Galinski</td>
+                <td class="center">533175</td>
+                <td>January 13,2011</td>
+                <td>April 8,2017</td>
+                <td class="right">37.00</td>
+            </tr>
+            <tr>
+                <td class="a" >Hoshl Nakamura</td>
+                <td class="center">601942</td>
+                <td>July 23,2012</td>
+                <td>n/a</td>
+                <td class="right">15.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" class="right">Total balance</th>
+                <th class="right">52.00</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
